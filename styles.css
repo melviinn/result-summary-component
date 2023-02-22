@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-grey-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    background-color: var(--white);
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px rgb(191, 191, 191);
+    margin-bottom: 30px;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 0.625em 1.875em;
+    background: linear-gradient(to bottom, rgba(120,87,255,1) 1%, rgba(46,43,233,1) 90%);
+    border-radius: 1.563em;
+}
+
+@media only screen and (max-width : 581px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .card-left {
+        max-width: 100%;
+        padding: 0.625em 4em;
+    }
+
+    .card-left p {
+        margin-top: 5px;
+    }
+
+    .card-right {
+        border-bottom-left-radius: 1.563em;
+    }
+}
+
+.card-left .card-left-header {
+    font-size: 1.2rem;
+    letter-spacing: 0.063rem;
+    color: var(--light-lavender);
+}
+
+.card-left .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 9.375em;
+    height: 9.375em;
+    border-radius: 50%;
+    background: var(--violet-blue);
+}
+
+.card-left .circle h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+}
+
+.card-left .circle span {
+    position: relative;
+    top: -2.688em;
+    color: var(--light-lavender);
+}
+
+.card-left h2 {
+    font-size: 1.7rem;
+    color: var(--white);
+    margin-bottom: 0.313em;
+}
+
+.card-left p {
+    color: var(--light-lavender);
+    font-size: 0.98rem;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 0.625em 1.875em;
+    background: var(--white);
+    border-top-right-radius: 1.563em;
+    border-bottom-right-radius: 1.563em;
+}
+
+.card-right .card-right-header {
+    font-size: 1.2rem;
+    letter-spacing: 0.063rem;
+    color: var(--dark-grey-blue);
+}
+
+.card-right .reaction-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.625em;
+    background: hsla(0, 100%, 67%, 0.1);
+    margin-bottom: 1.063em;
+}
+
+.card-right .memory-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.625em;
+    background: hsla(39, 100%, 56%, 0.1);
+    margin-bottom: 1.063em;
+}
+
+.card-right .verbal-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.625em;
+    background: hsla(166, 100%, 37%, 0.1);
+    margin-bottom: 1.063em;
+}
+
+.card-right .visual-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.625em;
+    background: hsla(234, 85%, 45%, 0.1);
+    margin-bottom: 2.188em;
+}
+
+.card-right img {
+    margin-right: 15px;
+}
+
+.card-right .reaction-card h3 {
+    position: relative;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--light-red);
+    right: 1.563em;
+}
+
+.card-right .memory-card h3 {
+    position: relative;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--orangey-yellow);
+    right: 1.563em;
+}
+
+.card-right .verbal-card h3 {
+    position: relative;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--green-teal);
+    right: 1.563em;
+}
+
+.card-right .visual-card h3 {
+    position: relative;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cobalt-blue);
+    right: 1.563em;
+}
+
+.card-right .memory-card span,
+.card-right .reaction-card span,
+.card-right .verbal-card span,
+.card-right .visual-card span {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--dark-grey-blue);
+    margin-left: 0.25em;
+}
+
+
+.card-right .memory-card span:nth-child(1),
+.card-right .reaction-card span:nth-child(1),
+.card-right .verbal-card span:nth-child(1),
+.card-right .visual-card span:nth-child(1) {
+    color: rgb(174, 174, 174);
+}
+
+.card-right button {
+    width: 100%;
+    padding: 0.938em;
+    border-radius: 1.563em;
+    border: none;
+    background-color: var(--dark-grey-blue);
+    color: var(--white);
+    font-size: 0.9rem;
+    margin-bottom: 1.563em;
+}
+
+.card-right button:hover {
+    background: linear-gradient(to bottom, rgba(120,87,255,1) 1%, rgba(46,43,233,1) 90%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
