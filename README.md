@@ -17,8 +17,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ## Links
 
 
-- Solution URL: [melviinn/product-preview-card-component](https://www.frontendmentor.io/solutions/qr-code-challenge-SyH5p78QuX)
-- Live Site URL: [product-preview-card-component.vercel.app](https://product-preview-card-component-six-chi.vercel.app/)
+- Solution URL: [melviinn/result-summary-component](https://www.frontendmentor.io/solutions/result-summary-component-htmlcss-Bu5qusHsmh)
+- Live Site URL: [result-summary-component.vercel.app](https://result-summary-component-psi.vercel.app/)
 
 ## My process
 
